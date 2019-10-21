@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#"><img src="hogwarts logo.png" class="logo" alt="oldschool logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle btn btn-outline-success mr-2" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Explore
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Gryffindor</a>
+                        <a class="dropdown-item" href="#">Slytherin</a>
+                        <a class="dropdown-item" href="#">Huffelpuff</a>
+                        <a class="dropdown-item" href="#">Ravenclaw</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Talk to dumbeldoor</a>
+                    </div>
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="What do you want to learn"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For Muggles</a>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" class="nav-link btn btn-outline-success" data-toggle="modal"
+                        data-target="#loginModal">Login</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                   Dummy sign in
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sign
+                                        in</button>
+                                    <button type="button" class="btn btn-primary">Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- top slidesow -->
+        <div id="carouselExampleControls" class="carousel slide h-50" data-ride="carousel">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100 ">
+                    <img class="h-100 w-100" src="hogward-banner.png" class="d-block w-100" alt="first course">
+                </div>
+                <div class="carousel-item h-auto">
+                    <img class="h-100 w-100" src="gryffindor-banner.jpg" class="d-block w-100" alt="third course">
+                </div>
+                <div class="carousel-item h-auto">
+                    <img class="h-100 w-100" src="slytherin-banner.jpg" class="d-block w-100" alt="third course">
+                </div>
+                <div class="carousel-item h-auto">
+                    <img class="h-100 w-100" src="hufflepuff-banner.jpg" class="d-block w-100" alt="second course">
+                </div>
+                <div class="carousel-item h-auto">
+                    <img class="h-100 w-100" src="ravenclaw-banner.jpg" class="d-block w-100" alt="third course">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-2">
+                <img class="unilogo" src="griffith.png">
+            </div>
+            <div class="col-2 mx-3">
+                <img class="unilogo" src="turku.png">
+            </div>
+            <div class="col-2 mx-3">
+                <img class="unilogo" src="yale.png">
+            </div>
+            <div class="col-2 mx-3">
+                <img class="unilogo" src="bristol.png">
+            </div>
+            <div class="col-2 mx-3">
+                <button type="button" class="btn btn-outline-warning">See Muggle Colleges</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Gryffindor</h5>
+                                <p class="card-text">Gryffindor is one of the four Houses of Hogwarts School of
+                                    Witchcraft and Wizardry and was founded by Godric Gryffindor. It was created by
+                                    Godric Gryffindor.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="gryffindor.png" class="card-img" alt="gryffindor badge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Slytherin</h5>
+                                <p class="card-text">Slytherin is one of the four houses of Hogwarts School of
+                                    Witchcraft and Wizardry and was founded by Salazar Slytherin. Slytherins are known
+                                    for being cunning and ambitious, although it is also known to have produced many
+                                    Dark witches and wizards.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="slytherin.png" class="card-img" alt="slytherin padge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-light ">
+        <div class="row">
+            <div class="col-9">
+                <h1 class="display-3 text-warning">How it Works</h1>
+                <p class="lead">Book a ticket to king cross station</p>
+                <hr class="my-4">
+                <p>walk right through platform 9 3/4 </p>
+                <a class="btn btn-clear btn-outline-warning btn-lg" href="#" role="button">Book your ticket</a>
+            </div>
+            <div class="col-3">
+                <img class="h-100" src="king-cross-station.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-2">Hogwarts for business</h1>
+        <p class="lead">Wizards and Wand makers can contact for business</p>
+        <hr class="my-4">
+        <p>...</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <div class="container">
+        <div class="jumbotron-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Our Subjects</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Transfigurations</li>
+                        <li class="list-group-item">Charms</li>
+                        <li class="list-group-item">Potions</li>
+                        <li class="list-group-item">History of Magic</li>
+                        <li class="list-group-item">Herbology</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Our Faculties</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Minerva McGonagall</li>
+                        <li class="list-group-item">Remus Lupin</li>
+                        <li class="list-group-item">Alastor Moody</li>
+                        <li class="list-group-item">Pomona Sprout</li>
+                        <li class="list-group-item">Rubeus Hagrid</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Minerva McGonagall</li>
+                        <li class="list-group-item">Remus Lupin</li>
+                        <li class="list-group-item">Alastor Moody</li>
+                        <li class="list-group-item">Pomona Sprout</li>
+                        <li class="list-group-item">Rubeus Hagrid</li>
+                        <li class="list-group-item">Horace Slughorn</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Minerva McGonagall</li>
+                        <li class="list-group-item">Remus Lupin</li>
+                        <li class="list-group-item">Alastor Moody</li>
+                        <li class="list-group-item">Pomona Sprout</li>
+                        <li class="list-group-item">Rubeus Hagrid</li>
+                        <li class="list-group-item">Horace Slughorn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
